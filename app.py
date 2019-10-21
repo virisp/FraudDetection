@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-loaded_model = pickle.load(open('/logistic_model.sav', 'rb'))
+loaded_model = pickle.load(open('logistic_model.sav', 'rb'))
 
 config = {
     "apiKey": "AIzaSyDoanF74Vz7-7la5QwtsnXJeaWD1P9yxX0",
