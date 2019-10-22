@@ -7,17 +7,7 @@ app = Flask(__name__)
 
 loaded_model = pickle.load(open('logistic_model.sav', 'rb'))
 
-config = {
-    "apiKey": "AIzaSyDoanF74Vz7-7la5QwtsnXJeaWD1P9yxX0",
-    "authDomain": "fraud-detection-e8f47.firebaseapp.com",
-    "databaseURL": "https://fraud-detection-e8f47.firebaseio.com",
-    "projectId": "fraud-detection-e8f47",
-    "storageBucket": "",
-    "messagingSenderId": "769528097628",
-    "appId": "1:769528097628:web:88365ba191529a635b2f99"
-}
-
-firebase = pyrebase.initialize_app(config)
+firebase = pyrebase.initialize_app('CONFIG_DATABASE')
 
 auth = firebase.auth()
 
