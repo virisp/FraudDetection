@@ -22,7 +22,7 @@ pycryptodome==3.9.0
 Pyrebase4==4.3.0
 python-dateutil==2.8.0
 python-dotenv==0.10.3
-python-jwt==2.0.1
+python-jwt==3.3.4
 pytz==2019.3
 requests==2.22.0
 requests-toolbelt==0.9.1
